@@ -1,0 +1,7 @@
+{
+  "app_root": "/home/emcan/repositories/emcan-experience",
+  "app_type": "node",
+  "startup_file": "app.js",
+  "environment": "production",
+  "node_version": "22"
+}
