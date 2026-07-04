@@ -13,6 +13,15 @@ export const ACCENT_RGB: Record<CinematicAccent, string> = {
 
 const INK = '10,11,12';
 
+/**
+ * Last real frame drawn anywhere in the scrubber. Only chapter 1 blocks
+ * "Enter Experience"; the rest load lazily in the background, so a fast
+ * scroll can reach a chapter whose frames haven't arrived yet. Freezing on
+ * the previous good frame (module-level: there's only ever one scrubber on
+ * the page) reads as smooth rather than a flash to black.
+ */
+let lastGoodImage: HTMLImageElement | null = null;
+
 /* ---------------------------------------------------------------------------
    FRAME SOURCE
    The scrubber draws frame `i` of a chapter onto the canvas. A source either
@@ -69,13 +78,20 @@ export class ImageFrameSource implements FrameSource {
 
   draw(ctx: CanvasRenderingContext2D, index: number, w: number, h: number) {
     const img = this.images[clamp(index, 0, this.count - 1)];
-    if (!img || !img.naturalWidth) {
-      // Poster fallback: never a broken player — paint a neutral still.
-      ctx.fillStyle = `rgb(${INK})`;
-      ctx.fillRect(0, 0, w, h);
+    if (img && img.naturalWidth) {
+      lastGoodImage = img;
+      coverDraw(ctx, img, img.naturalWidth, img.naturalHeight, w, h);
       return;
     }
-    coverDraw(ctx, img, img.naturalWidth, img.naturalHeight, w, h);
+    if (lastGoodImage) {
+      // Frame not loaded yet — freeze on the last real frame instead of a
+      // flash to black while lazy loading catches up.
+      coverDraw(ctx, lastGoodImage, lastGoodImage.naturalWidth, lastGoodImage.naturalHeight, w, h);
+      return;
+    }
+    // Nothing has loaded anywhere yet — neutral still, never a broken player.
+    ctx.fillStyle = `rgb(${INK})`;
+    ctx.fillRect(0, 0, w, h);
   }
 }
 

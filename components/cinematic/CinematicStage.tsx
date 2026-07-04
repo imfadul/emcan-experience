@@ -60,10 +60,10 @@ export function CinematicStage() {
       if (cancelled) return;
       setReady(true);
       canvasRef.current?.draw(0);
-      for (let i = 1; i < sources.length; i++) {
-        if (cancelled) break;
-        await sources[i]?.ensureLoaded();
-      }
+      // Load the remaining chapters in parallel rather than one at a time —
+      // catches up far faster on real hosting network conditions, so a fast
+      // scroll is less likely to outrun the lazy background load.
+      await Promise.all(sources.slice(1).map((s) => (cancelled ? undefined : s?.ensureLoaded())));
     })();
     return () => {
       cancelled = true;
