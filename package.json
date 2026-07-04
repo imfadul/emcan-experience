@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit",
-    "postinstall": "next build"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "gsap": "3.13.0",
