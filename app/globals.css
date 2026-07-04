@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   EMCAN GROUP — DESIGN TOKENS
+   Single source of truth. Colors are raw `R G B` channel triplets so Tailwind's
+   `/<alpha>` opacity modifiers work everywhere.
+   ========================================================================== */
+:root {
+  /* --- Brand neutrals: Gray #5a5c5f extended into a cinematic dark ramp --- */
+  --c-ink: 10 11 12; /* #0A0B0C — cinematic base */
+  --c-carbon: 18 20 23; /* #121417 */
+  --c-graphite: 28 31 35; /* #1C1F23 — surfaces */
+  --c-steel-900: 42 45 49; /* #2A2D31 */
+  --c-steel: 90 92 95; /* #5A5C5F — official brand Gray */
+  --c-concrete: 139 142 146; /* #8B8E92 — muted text */
+  --c-mist: 199 201 204; /* #C7C9CC */
+  --c-offwhite: 244 243 239; /* #F4F3EF — warm off-white */
+
+  /* --- Brand accents (official Emcan five-colour palette) --- */
+  --c-green: 41 150 23; /* #299617 — Royal Green · Energy/Power */
+  --c-blue: 105 170 221; /* #69AADD — Bright Blue · Technology/Control */
+  --c-gold: 216 169 58; /* #D8A93A — Harvest Gold · Construction/Build */
+  --c-beige: 221 190 108; /* #DDBE6C — Golden Beige · Engineering/Design */
+
+  /* --- Semantic (dark cinematic theme) --- */
+  --c-bg: var(--c-ink);
+  --c-surface: var(--c-graphite);
+  --c-fg: var(--c-offwhite);
+  --c-muted: var(--c-concrete);
+  --c-line: 244 243 239; /* hairlines: use with low alpha, e.g. border-line/10 */
+  --c-accent: var(--c-gold); /* default; chapters override per company */
+
+  /* --- Fluid type scale --- */
+  --fs-display-1: clamp(2.75rem, 1.3rem + 6.4vw, 7.5rem);
+  --fs-display-2: clamp(2.25rem, 1.4rem + 4.2vw, 5rem);
+  --fs-headline: clamp(1.75rem, 1.2rem + 2.6vw, 3rem);
+  --fs-title: clamp(1.25rem, 1rem + 1.1vw, 1.75rem);
+
+  /* --- Layout rhythm --- */
+  --shell-max: 88rem; /* 1408px content shell */
+  --gutter: clamp(1.25rem, 0.6rem + 3vw, 4rem);
+  --section-y: clamp(4rem, 2.5rem + 6vw, 9rem);
+  --header-h: 4.5rem;
+
+  color-scheme: dark;
+}
+
+/* ============================================================================
+   CORPORATE ZONE — light theme override
+   The cinematic scroll journey stays dark/cinematic by design; the corporate
+   homepage below it (everything after <Cinematic/>, plus the Footer) flips to
+   a light theme via this scope. Brand accent tokens are darkened here
+   specifically for WCAG contrast on a light background — the bright cinematic
+   tones (esp. beige/gold/blue) fall under 2.5:1 against off-white, well short
+   of the 4.5:1 this project's acceptance bar requires.
+   ========================================================================== */
+.corporate-zone {
+  --c-bg: 244 243 239; /* warm off-white page background */
+  --c-surface: 90 92 95; /* steel; used at low alpha for subtle card tint */
+  --c-carbon: 234 232 226; /* recessed/alt panel, slightly deeper than bg */
+  --c-fg: 10 11 12; /* ink — primary text */
+  --c-mist: 42 45 49; /* steel-900 — secondary text */
+  --c-muted: 90 92 95; /* steel — tertiary/label text */
+  --c-line: 10 11 12; /* ink — hairlines at low alpha */
+  --c-green: 27 112 16; /* darkened brand accents for AA contrast on light bg */
+  --c-blue: 30 92 148;
+  --c-gold: 122 92 20;
+  --c-beige: 122 100 48;
+  --c-accent: var(--c-gold);
+  color-scheme: light;
+}
+
+/* ============================================================================
+   BASE
+   ========================================================================== */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    min-height: 100svh;
+    overflow-x: hidden; /* hard guard against horizontal overflow */
+  }
+
+  /* Arabic locale switches the body typeface to Tajawal */
+  html[dir='rtl'] body {
+    @apply font-arabic;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: rgb(var(--c-gold));
+    color: rgb(var(--c-ink));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--c-accent));
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Respect reduced-motion at the platform level */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ============================================================================
+   LENIS (smooth scroll) — official recommended styles
+   ========================================================================== */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* ============================================================================
+   UTILITIES / PRIMITIVES
+   ========================================================================== */
+@layer components {
+  /* Centered content shell with responsive gutters */
+  .shell {
+    width: 100%;
+    max-width: var(--shell-max);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  /* Eyebrow / kicker label — technical, tracked-out */
+  .eyebrow {
+    @apply font-sans text-xs font-semibold uppercase tracking-eyebrow text-muted;
+  }
+
+  /* Skip-to-content link (visible on focus) */
+  .skip-link {
+    @apply sr-only;
+  }
+  .skip-link:focus {
+    @apply not-sr-only fixed start-4 top-4 z-toast rounded bg-offwhite px-4 py-2 text-sm font-semibold text-ink;
+  }
+
+  /* Hairline rule */
+  .hairline {
+    @apply border-t border-line/10;
+  }
+}

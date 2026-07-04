@@ -1,0 +1,417 @@
+{
+  "meta": {
+    "title": "Emcan Group — Design · Build · Power · Control",
+    "description": "Emcan Group is a Saudi industrial group delivering engineered, built, powered, and digitally controlled industrial facilities across four specialised companies."
+  },
+  "nav": {
+    "group": "Our Group",
+    "companies": "Companies",
+    "capabilities": "Capabilities",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "home": "Emcan Group — home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "companiesDesc": "Four companies, one industrial lifecycle.",
+    "skip": "Skip to content",
+    "primary": "Primary navigation"
+  },
+  "common": {
+    "exploreCompanies": "Explore Our Companies",
+    "discussProject": "Discuss Your Project",
+    "explore": "Explore",
+    "discipline": "Discipline"
+  },
+  "hero": {
+    "eyebrow": "Saudi Industrial Group",
+    "title": "Design. Build. Power. Control.",
+    "lede": "One integrated group for the full industrial lifecycle — from disciplined engineering and construction to reliable power and digital control.",
+    "scroll": "Scroll to begin"
+  },
+  "companies": {
+    "sectionEyebrow": "The Ecosystem",
+    "sectionTitle": "Four companies, one industrial lifecycle.",
+    "consultants": {
+      "name": "Emcan Consultants & Engineers",
+      "discipline": "Design",
+      "tagline": "Engineering industrial spaces with precision.",
+      "summary": "From feasibility and design to technical coordination, every successful industrial facility begins with disciplined engineering.",
+      "capabilities": ["Feasibility studies", "Engineering design", "Technical coordination"]
+    },
+    "alomran": {
+      "name": "Emcan Al Omran Contracting",
+      "discipline": "Build",
+      "tagline": "Turning engineered plans into industrial reality.",
+      "summary": "Disciplined execution, site control, and coordinated delivery for factories, warehouses, and industrial developments.",
+      "capabilities": ["Site execution", "Structural & civil works", "Coordinated delivery"]
+    },
+    "energy": {
+      "name": "Emcan Modern Energy",
+      "discipline": "Power",
+      "tagline": "Powering reliable industrial performance.",
+      "summary": "Integrated energy systems designed to keep critical industrial operations running safely and efficiently.",
+      "capabilities": ["Power systems", "Switchgear & distribution", "Backup power"]
+    },
+    "rama": {
+      "name": "Rama Technology",
+      "discipline": "Control",
+      "tagline": "Connecting and controlling modern industry.",
+      "summary": "Smart systems, operational visibility, and digital control that transform physical assets into connected environments.",
+      "capabilities": ["SCADA / BMS", "Operational visibility", "Access & environment"]
+    }
+  },
+  "sections": {
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "Engineering, construction, energy, and control under one group.",
+      "placeholder": "Detailed capabilities arrive in a later phase."
+    },
+    "projects": {
+      "eyebrow": "Selected Work",
+      "title": "Industrial developments delivered end to end.",
+      "placeholder": "The featured-projects gallery and filters arrive in a later phase."
+    },
+    "about": {
+      "eyebrow": "About Emcan",
+      "title": "An integrated industrial group built on engineering discipline.",
+      "placeholder": "The full group story arrives in a later phase."
+    }
+  },
+  "contact": {
+    "eyebrow": "Start a Conversation",
+    "title": "Discuss your project with Emcan.",
+    "lede": "Tell us about your industrial facility and the right company in the group will respond.",
+    "placeholder": "The full contact form arrives in a later phase.",
+    "info": {
+      "address": "Head office",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business hours",
+      "hoursValue": "Sunday – Thursday, {time}"
+    }
+  },
+  "cinematic": {
+    "hook": "Four specialized companies. One integrated industrial solution.",
+    "loading": "Preparing the experience",
+    "enter": "Enter Experience",
+    "skip": "Skip the intro",
+    "signage": "Signage",
+    "railLabel": "Journey progress",
+    "rama": {
+      "system": "Manufacturing Execution System",
+      "live": "Live · connected",
+      "oee": "OEE",
+      "availability": "Availability",
+      "performance": "Performance",
+      "quality": "Quality",
+      "lines": "Production lines",
+      "sensors": "Live sensors",
+      "temp": "Temp",
+      "vibration": "Vibration",
+      "pressure": "Pressure",
+      "energy": "Energy draw",
+      "running": "running",
+      "alert": "Predictive maintenance",
+      "alertBody": "Bearing-wear trend detected on Extruder 02 — service recommended within 72h.",
+      "illustrative": "Illustrative live system data"
+    },
+    "chapters": {
+      "design": {
+        "kicker": "01 · Design",
+        "company": "Emcan Consultants & Engineers",
+        "title": "Engineering industrial spaces with precision.",
+        "body": "From feasibility and design to technical coordination, every successful industrial facility begins with disciplined engineering."
+      },
+      "build": {
+        "kicker": "02 · Build",
+        "company": "Emcan Al Omran Contracting",
+        "title": "Turning engineered plans into industrial reality.",
+        "body": "Disciplined execution, site control, and coordinated delivery for factories, warehouses, and industrial developments."
+      },
+      "power": {
+        "kicker": "03 · Power",
+        "company": "Emcan Modern Energy",
+        "title": "Powering reliable industrial performance.",
+        "body": "Integrated energy systems designed to keep critical industrial operations running safely and efficiently."
+      },
+      "completion": {
+        "kicker": "04 · Completion",
+        "company": "The facility takes shape",
+        "title": "From structure to operation.",
+        "body": "Structure, cladding, services, roads, and commissioning — the same facility resolved into an operational asset."
+      },
+      "control": {
+        "kicker": "05 · Control",
+        "company": "Rama Technology",
+        "title": "Connecting and controlling modern industry.",
+        "body": "Smart systems, operational visibility, and digital control that transform physical assets into connected environments."
+      }
+    },
+    "reveal": {
+      "title": "From industrial vision to intelligent operation.",
+      "tagline": "Design. Build. Power. Control."
+    }
+  },
+  "group": {
+    "eyebrow": "Our Group",
+    "title": "A Saudi industrial group built on engineering discipline.",
+    "intro": "Emcan Group delivers integrated solutions for the process industry and beyond — engineering, construction, energy, and digital control under one structure. Backed by in-house capabilities across the Kingdom, we combine global best practice with deep local knowledge.",
+    "pillarsTitle": "End-to-end across the value chain"
+  },
+  "pillars": {
+    "engineering": { "title": "Engineering & Consulting", "desc": "Strategic planning, feasibility, and disciplined design across architecture, civil, and MEP." },
+    "construction": { "title": "Construction & Infrastructure", "desc": "Turnkey project execution, site control, and coordinated delivery." },
+    "smartManufacturing": { "title": "Smart Manufacturing & Automation", "desc": "Industry 4.0-ready systems for connected, monitored operations." },
+    "coldStorage": { "title": "Refrigeration & Cold Storage", "desc": "Specialised climate control for cold-chain and critical industries." },
+    "smartBuilding": { "title": "Smart Building Technologies", "desc": "Intelligent, energy-efficient facilities and integrated controls." }
+  },
+  "sectors": {
+    "eyebrow": "Sectors",
+    "title": "Industries we engineer for.",
+    "lede": "From manufacturing and logistics to energy and smart facilities — proven across the sectors that move the Kingdom.",
+    "items": {
+      "industrial": { "name": "Industrial Facilities", "blurb": "Factories and production plants engineered for throughput." },
+      "logistics": { "name": "Logistics & Warehousing", "blurb": "Distribution centres and high-bay storage." },
+      "energy": { "name": "Power & Energy", "blurb": "Generation, distribution, and backup infrastructure." },
+      "infrastructure": { "name": "Infrastructure", "blurb": "Utilities, networks, and industrial support works." },
+      "coldStorage": { "name": "Cold Storage", "blurb": "Temperature-controlled facilities and cold chain." },
+      "smartManufacturing": { "name": "Smart Manufacturing", "blurb": "Automated, Industry 4.0-ready production." },
+      "controlRoom": { "name": "Control Rooms", "blurb": "Operations centres and monitoring environments." },
+      "airport": { "name": "Airport Facilities", "blurb": "Aviation support and terminal-adjacent works." },
+      "port": { "name": "Port Facilities", "blurb": "Seaport and marine-side industrial developments." },
+      "foodBeverage": { "name": "Food & Beverage", "blurb": "Hygienic process and packaging facilities." },
+      "pharmaceutical": { "name": "Pharmaceutical", "blurb": "Controlled-environment medical and pharma plants." },
+      "chemicals": { "name": "Chemicals", "blurb": "Process plants for chemical and coatings production." },
+      "automotive": { "name": "Automotive", "blurb": "Assembly, service, and showroom facilities." }
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Capabilities",
+    "title": "One group, the full value chain.",
+    "lede": "Engineering, construction, energy, and control — coordinated so a single facility moves seamlessly from drawing to operation."
+  },
+  "projects": {
+    "eyebrow": "Selected Work",
+    "title": "Industrial facilities, delivered.",
+    "lede": "A selection of design and supervision projects delivered across the Kingdom. More available on request.",
+    "filterAllSectors": "All sectors",
+    "filterAllLocations": "All locations",
+    "filterBySector": "Sector",
+    "filterByLocation": "Location",
+    "showing": "{count} of {total} projects",
+    "empty": "No projects match these filters.",
+    "reset": "Reset filters",
+    "labels": { "client": "Client", "location": "Location", "scope": "Scope", "year": "Year", "bua": "Built-up area", "by": "Delivered by" },
+    "status": { "delivered": "Delivered" },
+    "sectorNames": {
+      "logistics": "Logistics",
+      "food-beverage": "Food & Beverage",
+      "pharma": "Pharmaceutical",
+      "manufacturing": "Manufacturing",
+      "chemicals": "Chemicals",
+      "infrastructure": "Infrastructure"
+    },
+    "requestDetails": "Request details"
+  },
+  "lifecycle": {
+    "eyebrow": "How We Deliver",
+    "title": "From drawing to operation.",
+    "lede": "Four disciplines, one coordinated lifecycle — so accountability never falls between contracts.",
+    "stages": {
+      "design": { "title": "Design", "desc": "Feasibility, engineering, and technical coordination." },
+      "build": { "title": "Build", "desc": "Disciplined execution and site control." },
+      "power": { "title": "Power", "desc": "Energy systems engineered for reliability." },
+      "control": { "title": "Control", "desc": "Digital monitoring and operational visibility." }
+    }
+  },
+  "why": {
+    "eyebrow": "Why Emcan",
+    "title": "Strengths that hold under scrutiny.",
+    "items": {
+      "inHouse": "Professional in-house team covering every discipline",
+      "optimalDesign": "Optimal, build-ready designs",
+      "standards": "Command of applicable technical standards",
+      "process": "Deep comprehension of process requirements",
+      "logistics": "Deep comprehension of logistics requirements",
+      "legislation": "Knowledge of locally applied legislation",
+      "collaboration": "Ability to team up with project stakeholders",
+      "international": "Collaborations with international design firms",
+      "epc": "EPC turnkey delivery capability"
+    }
+  },
+  "stats": {
+    "eyebrow": "By the Numbers",
+    "title": "Scale and reach.",
+    "items": {
+      "companies": "Specialised companies",
+      "years": "Years of experience",
+      "projects": "Projects delivered",
+      "clients": "Satisfied clients"
+    }
+  },
+  "certs": {
+    "eyebrow": "Credentials",
+    "title": "Registered, prequalified, accountable.",
+    "registeredBy": "Registered with",
+    "prequalifiedBy": "Prequalified by"
+  },
+  "clients": {
+    "eyebrow": "Trusted By",
+    "title": "Selected clients across the Kingdom."
+  },
+  "leadership": {
+    "eyebrow": "Leadership",
+    "title": "Our Leadership Team",
+    "lede": "Experienced leaders driving innovation and excellence across Emcan Group.",
+    "chairmanBadge": "Chairman",
+    "directorBadge": "Director",
+    "chairman": {
+      "name": "Mohammed Bashawri",
+      "role": "Emcan Group",
+      "statement": "In an increasingly competitive environment marked by rising challenges and escalating resource costs, efficiency, optimization, and sustainability are no longer options — they are strategic imperatives. At Emcan, we do not approach projects as mere spaces, systems, or services. We view every project as a high-performance investment asset and a unique production engine, engineered with the full depth of our expertise and purpose-built to deliver measurable value.\n\nDriven by experience and integrity, our projects are distinguished by superior quality, operational efficiency, and the integration of smart buildings and smart industrial solutions powered by Fourth Industrial Revolution technologies. They are sustainable, safe, and designed to generate strong, long-term economic returns. At Emcan, we do not limit ourselves to achieving what is possible — we are committed, Inshallah, to expanding boundaries and transforming the impossible into tangible, profitable realities."
+    },
+    "directors": {
+      "rafei": {
+        "name": "Ammar Rafei",
+        "shortStatement": "Results-driven engineering and project management executive with 18+ years of international experience in industrial engineering, automation, and large-scale project delivery across multiple sectors.",
+        "bio": "Currently Managing Director at Emcan Consultants & Engineers, leading design and supervision services for industrial plants and mixed-use developments. Previously Design Manager at Khatib & Alami on the Jeddah Central Development, and over 12 years in project management at HUTA Marine."
+      },
+      "amin": {
+        "name": "Haitham Amin",
+        "shortStatement": "Seasoned construction executive with over 22 years of experience in Saudi Arabia's construction sector, specializing in project delivery and executive leadership.",
+        "bio": "Holds a Master's Degree in Project Management and specializes in project delivery, business development, and executive leadership. Has a proven track record of successfully managing complex industrial and commercial projects across Saudi Arabia's construction sector, bringing more than two decades of hands-on delivery experience to every engagement."
+      },
+      "alryati": {
+        "name": "Ramadan AlRyati",
+        "shortStatement": "Executive leader in energy, infrastructure, and electrical manufacturing with over two decades of experience building and transforming businesses across the GCC and Europe.",
+        "bio": "As General Manager – KSA, leads full-spectrum operations with end-to-end P&L accountability across power generation, EPC, district cooling, and MV/LV electrical product development. Specializes in scaling organizations, operational restructuring, and delivering high-value infrastructure programs that bridge engineering depth with executive strategy."
+      },
+      "alfayoumi": {
+        "name": "Abdullah AlFayoumi",
+        "shortStatement": "Technology leader with over 18 years of experience spanning programming, teaching, project management, and executive leadership in the technology field.",
+        "bio": "Progressed from programming and teaching through project management to leading Rama Technology. Known for his leadership vision and commitment to emerging technologies, with particular interest in cybersecurity and technical infrastructure, and a strong ability to integrate technologies into effective, innovative solutions."
+      }
+    }
+  },
+  "milestones": {
+    "eyebrow": "Our Story",
+    "title": "Two decades of building the Kingdom's industry.",
+    "items": {
+      "pioneers": { "year": "1980s", "title": "Industrial Engineering Pioneers", "description": "Saudi Arabia's industrial engineering movement takes shape, with some of our founding members playing key roles." },
+      "foundation": { "year": "2008", "title": "Foundation of Excellence", "description": "Establishment of Emcan Consultants & Engineers in Jeddah, delivering multidisciplinary design and consultancy services." },
+      "expansion": { "year": "2010–2014", "title": "Expansion & Growth", "description": "Expansion into large-scale industrial, logistics, and infrastructure projects, building a reputation for reliability and technical excellence." },
+      "epc": { "year": "2015", "title": "Launch of EPC Division", "description": "Launch of Emcan Al-Omran, providing EPC turnkey solutions across civil, industrial, and infrastructure projects." },
+      "sustainability": { "year": "2017–2019", "title": "Sustainability Drive", "description": "Entry into renewable energy, district cooling, and energy storage projects, aligning with Saudi Arabia's sustainability drive." },
+      "iconic": { "year": "2020", "title": "Iconic Projects", "description": "Recognition through iconic industrial projects such as the Pepsi Mega Factory, food industry facilities, and pharmaceutical plants." },
+      "partnerships": { "year": "2021", "title": "Strategic Partnerships", "description": "Strategic partnership with Kingspan Group to introduce high-performance, sustainable building systems to the Kingdom." },
+      "multidisciplinary": { "year": "2022–2023", "title": "Multidisciplinary Excellence", "description": "Expansion into advanced healthcare, logistics, and mega industrial projects, strengthening Emcan's multidisciplinary footprint." },
+      "today": { "year": "Today", "title": "Vision 2030 Partner", "description": "Emcan Group stands as a trusted partner for Saudi Arabia's Vision 2030, delivering smart, sustainable, and future-ready solutions across industries." }
+    }
+  },
+  "sustainability": {
+    "eyebrow": "Sustainability & Safety",
+    "title": "Built responsibly, run safely.",
+    "lede": "Safety and efficiency are engineered in — not bolted on.",
+    "items": {
+      "hse": { "title": "HSE & QA/QC", "desc": "Dedicated health, safety, and quality functions on every project." },
+      "energy": { "title": "Energy efficiency", "desc": "Smart building technologies and photovoltaic solutions that cut consumption." },
+      "coldchain": { "title": "Cold-chain integrity", "desc": "Specialised refrigeration that protects critical product." },
+      "vision": { "title": "Vision 2030 aligned", "desc": "Local capability supporting the Kingdom's industrial ambitions." }
+    }
+  },
+  "contactForm": {
+    "fields": {
+      "fullName": "Full name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "country": "Country",
+      "selectedCompany": "Which company",
+      "inquiryType": "Inquiry type",
+      "projectType": "Project type",
+      "projectLocation": "Project location",
+      "projectStage": "Estimated project stage",
+      "preferredContact": "Preferred contact method",
+      "message": "Message"
+    },
+    "placeholders": { "select": "Select…" },
+    "options": {
+      "selectedCompany": {
+        "group": "Emcan Group / Not sure",
+        "consultants": "Emcan Consultants & Engineers",
+        "alomran": "Emcan Al Omran Contracting",
+        "energy": "Emcan Modern Energy",
+        "rama": "Rama Technology"
+      },
+      "inquiryType": {
+        "new-project": "New project",
+        "consultation": "Technical consultation",
+        "tender": "Tender / RFQ",
+        "partnership": "Partnership / supplier",
+        "careers": "Careers",
+        "general": "General enquiry"
+      },
+      "projectType": {
+        "factory": "Factory / plant",
+        "warehouse": "Warehouse",
+        "logistics": "Logistics / distribution",
+        "cold-storage": "Cold storage",
+        "energy": "Energy / power",
+        "infrastructure": "Infrastructure",
+        "other": "Other"
+      },
+      "projectStage": {
+        "concept": "Concept",
+        "feasibility": "Feasibility",
+        "design": "Design",
+        "tender": "Tender",
+        "construction": "Construction",
+        "operation": "Operation"
+      },
+      "preferredContact": { "email": "Email", "phone": "Phone", "whatsapp": "WhatsApp" }
+    },
+    "consent": "I consent to Emcan Group contacting me about this enquiry.",
+    "errors": {
+      "required": "This field is required.",
+      "email": "Enter a valid email address.",
+      "tooShort": "Please add a little more detail.",
+      "consent": "Please confirm consent to proceed."
+    },
+    "states": {
+      "submit": "Send enquiry",
+      "submitting": "Sending…",
+      "error": "Something went wrong. Please try again, or email us directly."
+    },
+    "success": {
+      "title": "Thank you — your enquiry is in.",
+      "body": "The right company in the group will be in touch shortly.",
+      "again": "Send another"
+    }
+  },
+  "footer": {
+    "tagline": "One integrated group for the full industrial lifecycle — design, build, power, control.",
+    "companies": "Companies",
+    "explore": "Explore",
+    "company": "Company",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "links": {
+      "group": "Our Group",
+      "capabilities": "Capabilities",
+      "projects": "Projects",
+      "about": "About",
+      "leadership": "Leadership",
+      "sustainability": "Sustainability & Safety",
+      "careers": "Careers",
+      "contact": "Contact"
+    }
+  },
+  "lang": {
+    "toArabic": "العربية",
+    "toEnglish": "English",
+    "switchToArabic": "Switch language to Arabic",
+    "switchToEnglish": "Switch language to English"
+  }
+}
